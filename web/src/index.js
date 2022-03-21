@@ -9,12 +9,10 @@ export default class HMonkey extends Component {
  <div> 
  <h1> Greetings </h1>
  <p> this is just filler, for now </p >
-   <p> current user: {user} </p>
- </div>)
- }
-};
+   <p> current user: not yet implemented </p>
+ </div>
+  )}};
 
-const user = "Elias";
 
 ReactDOM.render(
  <HMonkey />, 
