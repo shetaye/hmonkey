@@ -1,0 +1,14 @@
+{
+  "name": "hmonkey-backend",
+  "version": "0.0.1",
+  "description": "hMonkey backend",
+  "main": "src/index.ts",
+  "repository": "https://github.com/shetaye/hmonkey",
+  "author": "Joseph Shetaye",
+  "private": true,
+  "dependencies": {
+    "fastify": "^3.27.4",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.2"
+  }
+}
