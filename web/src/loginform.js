@@ -1,9 +1,7 @@
 import React,{useState} from 'react';
-import './index.css';
+import './style.css';
 
-
-
-export var LoginBoxes = function(){ 
+const Login = ({ isShowLogin }) =>{ 
 const [errorMessages, setErrorMessages] = useState({});
 const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -51,15 +49,18 @@ if (userData){
 
   const renderForm = (
    <div className="form"> 
-   <form onSubmit={handleSubmit}>
+   <form onSubmit={handleSubmit} className="form-box">
    <div className="input-container">
-    <label>Username </label>
-    <input type="text" name="uname" required />
+    <input type="text" placeholder="Username" name="uname" required />
      {renderErrorMessage("uname")}
     </div>
    <div className="input-container">
-    <input type="password" name="pass" required />
+    <input type="password" placeholder="Password" name="pass" required />
      {renderErrorMessage("pass")}
+   </div>
+    <div className="main-row"> 
+       <div className="main-column"> forgot passsword?</div>
+    <div className= "main-column right-content">sign up </div>
    </div>
    <div className="button-container">
    <input type="submit" />
@@ -68,21 +69,14 @@ if (userData){
    </div>
   );
    return(
-    <div className="main-content">
-     <div className="login-form">
+     <div className={`${!isShowLogin ? "active" : ""} show`}>
+    <div className="login-form">
      <div className="title">Sign In</div>
-    {isSubmitted ? <div> User is successfully logged in</div> : renderForm} 
+    {isSubmitted ? <div> User is successfully logged in</div> : renderForm}
    </div>
-   </div>
+    </div>
  
    ); 
  }
 
-export default class Login extends React.Component{
- render()
- {
-  return(
-   <LoginBoxes />
-  );
- } 
-}
+export default Login;

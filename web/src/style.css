@@ -1,0 +1,178 @@
+/* created by ervjimenez */
+html{
+ width: 100%;
+ height: auto;
+}
+h1{
+ color: #4A5669;
+}
+p{
+ color: #606E86;
+}
+
+.main-row{
+ display: flex;
+ flex-direction: center;
+}
+.main-column{
+ flex:50%;
+}
+.smallerImg{ /*makes images smaller*/
+ max-width:35%;
+ height:auto;
+}
+.row{
+ display: flex;
+ flex-direction: center;
+ align-items:center;
+ justify-content: center;
+}
+.main-content{/* still working on the grid stuff, will be figured out*/
+ font-family: Monospace;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: center;
+ gap: 20px;
+ height: auto;
+ background-color: #FFFFFF;
+ margin-top: 5%;
+
+}
+
+.show{
+ display: block;
+ transition: 800ms;
+ opacity: 1;
+ width: 100%;
+}
+
+.show.active{
+  transform: translateY(100px) scale(0) rotateY(180deg);
+  opacity: 0;
+  width: 0%;
+  height: auto;
+}
+
+.navbar{
+ position: absolute;
+ width:100%;
+ height: 2%;
+ background: #5485AF;
+ padding: 3%;
+ left: 0px;
+ top: 0px;
+ display: flex;
+}
+
+.navColumn{
+ flex: 50%;
+}
+.loginicon{
+ font-size: 90%;
+ padding: 10px;
+ position: absolute;
+ width: 10%;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-weight: bolder;
+ height: 5%;
+ background: #56BDBE;
+ border-radius: 24px;
+ cursor: pointer;
+ font-family: monospace;
+}
+
+.loginicon:hover{
+ color: white;
+} 
+.right-content{
+ justify-content: flex-end;
+}
+
+.darktheme{/* will change background and text color to darker theme once 
+ it is finished*/
+ background-color:#282A34;
+ color:#25A7C1;
+}
+
+.darkthemeButton{
+ padding: 10px;
+ position: absolute;
+ width: 10%;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ font-weight: bolder;
+ height: 5%;
+ flex-direction: center;
+} 
+/* below is the stuff for the login, more will be added later*/
+
+input[type="text"],
+input[type="password"]{
+ width: 100%;
+ height: 30px;
+ border: 1px solid rgba(0,0,0,0.2);
+ border-radius: 5px;
+}
+
+input[type="submit"]{ 
+ margin-top: 10px;
+ margin-bottom:10px;
+ cursor: pointer;
+ font-size: 15px;
+ background: #72BBBD;
+ color: black;
+ padding: 10px 20px;
+ border-radius: 10px;
+ border-style: none;
+} 
+
+input[type="submit"]:hover {
+ background: #4E566596;
+} 
+
+.button-container{
+ display: flex;
+ justify-content: center;
+} 
+
+.login-form{
+ margin-top: 10%;
+ margin-left: 5%;
+ font-family: sans-serif;
+ width: 80%;
+ justify-content: center;
+ background-color: #5485AF;
+ color: white;
+ padding: 5%;
+ border-radius: 20px;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+} 
+
+.list-container{
+ display: flex;
+} 
+
+.error{
+ color: red;
+ font-size: 12px;
+} 
+
+.title{
+ font-size: 25px;
+ margin-bottom: 20px;
+} 
+
+.input-container{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ height:auto;
+ margin-right: 10%;
+ margin-bottom: 5%;
+ }
+
