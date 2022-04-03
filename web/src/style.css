@@ -37,9 +37,7 @@ p{
  height: auto;
  background-color: #FFFFFF;
  margin-top: 5%;
-
 }
-
 .show{
  display: block;
  transition: 800ms;
@@ -59,14 +57,19 @@ p{
  width:100%;
  height: 2%;
  background: #5485AF;
- padding: 3%;
+ padding: 2%;
  left: 0px;
  top: 0px;
  display: flex;
 }
 
-.navColumn{
+.navColumnL{
  flex: 50%;
+ justify-content: left;
+}
+.navColumnR{
+ flex: 50%;
+ text-align: right;
 }
 .loginicon{
  font-size: 90%;
@@ -88,10 +91,6 @@ p{
 .loginicon:hover{
  color: white;
 } 
-.right-content{
- justify-content: flex-end;
-}
-
 .darktheme{/* will change background and text color to darker theme once 
  it is finished*/
  background-color:#282A34;
@@ -99,15 +98,12 @@ p{
 }
 
 .darkthemeButton{
- padding: 10px;
- position: absolute;
+ position:fixed;
  width: 10%;
  text-decoration: none;
- display: flex;
- align-items: center;
+ align-items:center;
  font-weight: bolder;
  height: 5%;
- flex-direction: center;
 } 
 /* below is the stuff for the login, more will be added later*/
 
@@ -149,6 +145,7 @@ input[type="submit"]:hover {
  background-color: #5485AF;
  color: white;
  padding: 5%;
+ position:absolute;
  border-radius: 20px;
  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
 } 

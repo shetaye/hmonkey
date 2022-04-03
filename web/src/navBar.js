@@ -11,16 +11,15 @@ function NavBar({ handleLoginClick, handleDarkModeClick }) {
   }
    return (
     <div className="navbar">
-     <div className="navColumn">
+     <div className="navColumnL">
        <span onClick={handleClickLogin} className="loginicon"> Sign In </span>
-
     </div>
-    <div>
+ <div className="navColumnR">
     <span onClick={handleClickDark} className="darkthemeButton">
     <img src= {Moon} alt= "dark mode button" className="smallerImg" />
     </span>
      </div>
-    </div>
+   </div> 
    );
 }
 export default NavBar;
