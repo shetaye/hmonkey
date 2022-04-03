@@ -10,4 +10,4 @@ Other pages not yet visualized.
 
 Darkmode? X :/
 
-So far, I have made decent progress on this website imo, since I am learning React from essentially the ground up, with just a little js and html&css knowledge, bare with me.  
+So far, I have made decent progress on this website in my opinion, since I am learning React from essentially the ground up, with just a little js and html&css knowledge, bare with me.  
