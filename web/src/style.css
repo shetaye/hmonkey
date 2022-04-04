@@ -64,12 +64,17 @@ p{
 }
 
 .navColumnL{
- flex: 50%;
+ flex: 50;
+ display: flex;
  justify-content: left;
 }
 .navColumnR{
  flex: 50%;
  text-align: right;
+}
+.navSubColumn{
+ flex: 20%;
+ align-items: center;
 }
 .loginicon{
  font-size: 90%;
@@ -162,7 +167,11 @@ input[type="submit"]:hover {
 .title{
  font-size: 25px;
  margin-bottom: 20px;
-} 
+ color: white;
+}
+.subTitle{
+ color:white;
+}
 
 .input-container{
  display: flex;
@@ -173,3 +182,33 @@ input[type="submit"]:hover {
  margin-bottom: 5%;
  }
 
+
+.success{
+ display: block;
+ background-color: #5485AF;
+ color: white;
+ width: fit-content;
+ height: auto;
+ padding: 2%;
+}
+
+.signup-form{
+ margin-top: 10%;
+ margin-left: 5%;
+ font-family: sans-serif;
+ width: 80%;
+ justify-content: center;
+ background-color: #5485AF;
+ color: white;
+ padding: 5%;
+ position:absolute;
+ border-radius: 20px;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+} 
+
+.label{
+ display: block;
+ font-size: larger;
+ color: white;
+ padding: 5px;
+} 

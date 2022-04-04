@@ -60,7 +60,6 @@ if (userData){
    </div>
     <div className="main-row"> 
        <div className="main-column"> forgot passsword?</div>
-    <div className= "main-column right-content">sign up </div>
    </div>
    <div className="button-container">
    <input type="submit" />
