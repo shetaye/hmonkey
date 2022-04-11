@@ -9,15 +9,14 @@ h1{
 p{
  color: #606E86;
 }
- .main-row{
+
+.main-row{
  display: flex;
  flex-direction: center;
 }
-
 .main-column{
  flex:50%;
 }
-
 .smallerImg{ /*makes images smaller*/
  max-width:35%;
  height:auto;
@@ -27,8 +26,6 @@ p{
  flex-direction: center;
  align-items:center;
  justify-content: center;
- height: 100px;
- flex-grow: 0;
 }
 .main-content{/* still working on the grid stuff, will be figured out*/
  font-family: Monospace;
@@ -47,8 +44,6 @@ p{
  width: 100%;
 }
 
-
-
 .show.active{
   transform: translateY(100px) scale(0) rotateY(180deg);
   opacity: 0;
@@ -59,47 +54,47 @@ p{
 .navbar{
  position: absolute;
  width:100%;
- height: 25px;
+ height: 2%;
  background: #5485AF;
- padding: 10px 0px; 
+ padding: 2%;
  left: 0px;
  top: 0px;
- flex-grow: 0;
- flex-shrink: 0;
  display: flex;
 }
 
 .navColumnL{
- flex: 50%;
+ flex: 50;
  display: flex;
+ justify-content: left;
 }
 .navColumnR{
  flex: 50%;
+ text-align: right;
+}
+.navSubColumnL{
  display: flex;
- align-items:center;
- justify-content: flex-end;
+ flex: 5%;
+ justify-content: left;
+}
+.loginicon{
+ font-size: 90%;
+ padding: 1%;
+ position: absolute;
+ width: 10%;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-weight: bolder;
+ height: 5%;
+ background: #56BDBE;
+ border-radius: 24px;
+ cursor: pointer;
+ font-family: monospace;
 }
 
-.navSubColumnL{
-text-align: left;
-height: 100%;
-width: 100px;
-}
-.navSubColumnR{
- text-align: right;
- height: 100%;
- width: 100px;
-}
-.navbarButtons{
- font-family: monospace;
- padding : 10px 10px;
- flex-grow: 0;
- flex-shrink: 0;
- text-align: center;
- cursor:pointer;
-} 
-.navbarButtons:hover{
- color:#ffffff;
+.loginicon:hover{
+ color: white;
 } 
 
 .dark-content{
@@ -147,7 +142,6 @@ input[type="submit"]:hover {
 } 
 
 .login-form{
- display: block;
  margin-top: 10%;
  margin-left: 5%;
  font-family: sans-serif;

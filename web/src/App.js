@@ -3,6 +3,8 @@ import './style.css';
 import Login from './loginform';
 import NavBar from './navBar';
 import SignUp from './signupform';
+import MainText1 from './mainText.js';
+
 /*import DarkMode from './darkmode'; */
 
 /* this is the main class that will be printed onto the main page*/
@@ -28,8 +30,9 @@ const [isShowSignUp, setIsShowSignUp] = useState(false);
    <div className="row"> 
    <div className="main-content">
    <h1> Welcome to hMonkey! </h1>
+      </div>
    </div>
-   </div> 
+   <MainText1 />
 </body> 
 );
 
